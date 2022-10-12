@@ -116,7 +116,7 @@ body {
 
 /* Panel two */
 .two {
-  background-color: blue;
+  background-color: #01161e;
 }
 
 /* Responsive Styles */
@@ -149,4 +149,8 @@ body {
     width: 60%;
     margin: 0 0 5vh 0;
   }
+}
+
+.btn-custom {
+  border: 4px #01161e;
 }
