@@ -31,9 +31,17 @@ body {
   color: #598392 !important;
 }
 
+.navbar-brand:hover {
+  color: #8fb8c6 !important;
+}
+
 .btn-primary {
   background-color: #124559 !important;
   border-color: #aec !important;
+}
+
+.btn-primary:hover {
+  background-color: #215f78 !important;
 }
 
 .panel {
@@ -84,6 +92,10 @@ body {
   margin-top: 1rem;
 }
 
+.hero-button:hover {
+  background-color: #82dcbb !important;
+}
+
 .socials {
   margin-top: 1.5rem;
 }
@@ -91,6 +103,10 @@ body {
 .social-link {
   color: #598392;
   padding-right: 0.3rem;
+}
+
+.social-link:hover {
+  color: #739cab;
 }
 
 .two {
