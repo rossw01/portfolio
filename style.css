@@ -44,7 +44,7 @@ body {
 }
 
 .inline-padding {
-  padding-inline: 200px;
+  padding-inline: 250px;
 }
 
 .one {
@@ -75,6 +75,22 @@ body {
 .hero-image {
   margin-left: auto;
   width: 40%;
+}
+
+.hero-button {
+  background-color: #60c19e !important;
+  color: #01161e !important;
+  font-size: 56px;
+  margin-top: 1rem;
+}
+
+.socials {
+  margin-top: 1.5rem;
+}
+
+.social-link {
+  color: #598392;
+  padding-right: 0.3rem;
 }
 
 .two {
