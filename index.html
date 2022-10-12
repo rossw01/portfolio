@@ -22,15 +22,16 @@
       src="https://kit.fontawesome.com/422b824c7f.js"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
-      <div class="panel one inline-padding">
+      <div class="panel one inline-padding" id="panelOne">
         <nav id="navbar" class="navbar py-4">
           <a class="navbar-brand" href="#">Ross Williamson</a>
           <ul class="nav nav-pills">
             <li class="nav-item">
-              <a class="btn btn-primary" href="#">View my projects!</a>
+              <a class="btn btn-primary" href="#">Contact me</a>
             </li>
           </ul>
         </nav>
@@ -44,7 +45,7 @@
               Blanditiis provident ex sint repellat reiciendis eum qui, placeat
               animi dicta accusamus.
             </h2>
-            <a class="btn btn-primary hero-button" href="#"
+            <a class="btn btn-primary hero-button" onclick="scrollToProjects()"
               ><span style="font-size: x-large">View my projects</span></a
             >
             <div class="socials">
@@ -62,7 +63,7 @@
           <img src="./images/hero-image.svg" class="hero-image" />
         </div>
       </div>
-      <div class="panel two inline-padding">Test</div>
+      <div class="panel two inline-padding" id="panelTwo">Test</div>
     </div>
   </body>
 </html>
