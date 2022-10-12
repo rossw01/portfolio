@@ -12,11 +12,17 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="wrapper">
-      <div class="panel one">
-        <nav id="navbar" class="navbar px-4 py-4">
+      <div class="panel one inline-padding">
+        <nav id="navbar" class="navbar py-4">
           <a class="navbar-brand" href="#">Ross Williamson</a>
           <ul class="nav nav-pills">
             <li class="nav-item">
@@ -24,8 +30,19 @@
             </li>
           </ul>
         </nav>
+        <div class="panel-one-content">
+          <div class="hero-content">
+            <h1 class="hero-headline">Hero Headline</h1>
+            <h2 class="hero-subtext">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Blanditiis provident ex sint repellat reiciendis eum qui, placeat
+              animi dicta accusamus.
+            </h2>
+          </div>
+          <img src="./images/hero-image.svg" class="hero-image" />
+        </div>
       </div>
-      <div class="panel two">Test</div>
+      <div class="panel two inline-padding">Test</div>
     </div>
   </body>
 </html>
