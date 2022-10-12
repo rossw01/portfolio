@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0px;
+}
+
+.palette-colours {
+  /* Not a real class, just a palette for speeding up workflow */
+  background: #01161e;
+  background: #124559;
+  background: #598392;
+  background: #aec3b0;
+  background: #eff6e0;
+}
+
+.wrapper {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.navbar {
+  background-color: #124559;
+  height: 7em;
+  width: 100%;
+}
+
+.navbar-brand {
+  color: #598392 !important;
+}
+
+.btn-primary {
+  background-color: #598392 !important;
+  border-color: #aec !important;
+}
+
+.panel {
+  height: 100vh;
+  display: flex;
+  scroll-snap-align: start;
+}
+
+.one {
+  background-color: green;
+}
+
+.two {
+  background-color: blue;
+}
