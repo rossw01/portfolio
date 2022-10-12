@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: "DM Sans", monospace;
 }
 
 html,
@@ -23,9 +24,7 @@ body {
 }
 
 .navbar {
-  background-color: #124559;
-  height: 7em;
-  width: 100%;
+  background-color: #01161e;
 }
 
 .navbar-brand {
@@ -33,20 +32,79 @@ body {
 }
 
 .btn-primary {
-  background-color: #598392 !important;
+  background-color: #124559 !important;
   border-color: #aec !important;
 }
 
 .panel {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   scroll-snap-align: start;
 }
 
+.inline-padding {
+  padding-inline: 200px;
+}
+
 .one {
-  background-color: green;
+  background-color: #01161e;
+}
+
+.panel-one-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.hero-content {
+  width: 55%;
+}
+
+.hero-headline {
+  font-size: 52px;
+  color: #598392;
+  font-family: "DM Serif Display", monospace;
+}
+
+.hero-subtext {
+  font-size: 16px;
+  color: #aec3b0;
+}
+
+.hero-image {
+  margin-left: auto;
+  width: 40%;
 }
 
 .two {
   background-color: blue;
+}
+
+/* Smaller Desktop Size */
+@media screen and (max-width: 1400px) {
+  .inline-padding {
+    padding-inline: 50px;
+  }
+  .hero-content {
+    width: 50%;
+  }
+}
+
+/* Mobile Size */
+@media screen and (max-width: 700px) {
+  .hero-content {
+    width: 100%;
+  }
+
+  .panel-one-content {
+    flex-direction: column-reverse;
+    margin-block: auto;
+    justify-content: center;
+  }
+
+  .hero-image {
+    width: 60%;
+    margin: 0 0 3rem 0;
+  }
 }
