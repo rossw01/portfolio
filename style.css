@@ -8,6 +8,11 @@ body {
   margin: 0px;
 }
 
+/* Text highlight override */
+::selection {
+  background: #aec3b0;
+}
+
 .palette-colours {
   /* Not a real class, just a palette for speeding up workflow */
   background: #01161e;
@@ -102,17 +107,19 @@ body {
 
 .social-link {
   color: #598392;
-  padding-right: 0.3rem;
+  padding-right: 0.5rem;
 }
 
 .social-link:hover {
   color: #739cab;
 }
 
+/* Panel two */
 .two {
   background-color: blue;
 }
 
+/* Responsive Styles */
 /* Smaller Desktop Size */
 @media screen and (max-width: 1400px) {
   .inline-padding {
@@ -128,6 +135,9 @@ body {
   .hero-content {
     width: 100%;
   }
+  .hero-headline {
+    font-size: 42px;
+  }
 
   .panel-one-content {
     flex-direction: column-reverse;
@@ -137,6 +147,6 @@ body {
 
   .hero-image {
     width: 60%;
-    margin: 0 0 3rem 0;
+    margin: 0 0 5vh 0;
   }
 }
