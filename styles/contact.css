@@ -1,0 +1,55 @@
+* {
+	box-sizing: border-box;
+	font-family: "DM Sans", monospace;
+}
+
+html,
+body {
+	margin: 0px;
+}
+
+/* Text highlight override */
+::selection {
+	background: #aec3b0;
+}
+
+.palette-colours {
+	/* Not a real class, just a palette for speeding up workflow */
+	background: #01161e;
+	background: #124559;
+	background: #598392;
+	background: #aec3b0;
+	background: #eff6e0;
+}
+
+.inline-padding {
+	padding-inline: 250px;
+}
+
+.wrapper {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact-box {
+	background-color: red;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+}
+
+.form-item {
+	margin-bottom: 1rem;
+}
+
+.form-button {
+	border-radius: 10px;
+	height: 3rem;
+	font-size: 20px;
+}

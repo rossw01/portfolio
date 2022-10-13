@@ -1,0 +1,32 @@
+* {
+	box-sizing: border-box;
+	font-family: "DM Sans", monospace;
+}
+
+html,
+body {
+	margin: 0px;
+}
+
+/* Text highlight override */
+::selection {
+	background: #aec3b0;
+}
+
+.palette-colours {
+	/* Not a real class, just a palette for speeding up workflow */
+	background: #01161e;
+	background: #124559;
+	background: #598392;
+	background: #aec3b0;
+	background: #eff6e0;
+}
+
+.wrapper {
+	height: 100vh;
+	width: 100vh;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+}

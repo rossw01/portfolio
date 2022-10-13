@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Ross Williamson's Portfolio</title>
+		<link rel="stylesheet" href="/styles/style.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Display&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/422b824c7f.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="/scripts/script.js" defer></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="panel one inline-padding" id="panelOne">
+				<nav id="navbar" class="navbar py-4">
+					<a class="navbar-brand" href="#">Ross Williamson</a>
+					<ul class="nav nav-pills">
+						<li class="nav-item">
+							<a class="btn btn-primary" href="/pages/contact.html"
+								>Contact me</a
+							>
+						</li>
+					</ul>
+				</nav>
+				<div class="panel-one-content">
+					<div class="hero-content">
+						<h1 class="hero-headline">
+							Hi, I'm Ross, a Web Developer from the UK! 👨🏻‍💻
+						</h1>
+						<h2 class="hero-subtext">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+							Blanditiis provident ex sint repellat reiciendis eum qui, placeat
+							animi dicta accusamus.
+						</h2>
+						<a class="btn btn-primary hero-button" onclick="scrollToProjects()"
+							><span style="font-size: x-large">View my projects</span></a
+						>
+						<div class="socials">
+							<a href="#"
+								><i class="fa-brands fa-linkedin social-link fa-3x"></i
+							></a>
+							<a href="#"
+								><i class="fa-brands fa-square-github social-link fa-3x"></i
+							></a>
+							<a href="#"
+								><i class="fa-solid fa-square-envelope social-link fa-3x"></i
+							></a>
+						</div>
+					</div>
+					<!-- Programmer Image -->
+					<img src="/images/hero-image.svg" class="hero-image" />
+				</div>
+			</div>
+			<div class="panel two inline-padding" id="panelTwo">
+				<div class="panel-two-content">
+					<!-- Carousel -->
+					<div
+						id="carouselExampleCaptions"
+						class="carousel slide"
+						data-bs-ride="carousel"
+					>
+						<div class="carousel-indicators">
+							<button
+								type="button"
+								data-bs-target="#carouselExampleCaptions"
+								data-bs-slide-to="0"
+								class="active"
+								aria-current="true"
+								aria-label="Slide 1"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#carouselExampleCaptions"
+								data-bs-slide-to="1"
+								aria-label="Slide 2"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#carouselExampleCaptions"
+								data-bs-slide-to="2"
+								aria-label="Slide 3"
+							></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img
+									src="/images/quiz-image.png"
+									class="d-block w-100"
+									alt="Screenshot of quiz web-app"
+								/>
+								<div
+									class="carousel-caption d-none d-md-block bg-dark"
+									style="--bs-bg-opacity: 0.7"
+								>
+									<h5>Quiz web-app</h5>
+									<p>
+										Some representative placeholder content for the first slide.
+									</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img
+									src="/images/hobbysite-image.png"
+									class="d-block w-100"
+									alt="Screenshot of hobby website"
+								/>
+								<div
+									class="carousel-caption d-none d-md-block bg-dark"
+									style="--bs-bg-opacity: 0.7"
+								>
+									<h5>Hobby Website</h5>
+									<p>
+										Some representative placeholder content for the second
+										slide.
+									</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img
+									src="/images/speedtype-image.png"
+									class="d-block w-100"
+									alt="..."
+								/>
+								<div
+									class="carousel-caption d-none d-md-block bg-dark"
+									style="--bs-bg-opacity: 0.7"
+								>
+									<h5>Typeracing web-app</h5>
+									<p>
+										Some representative placeholder content for the third slide.
+									</p>
+								</div>
+							</div>
+						</div>
+						<button
+							class="carousel-control-prev"
+							type="button"
+							data-bs-target="#carouselExampleCaptions"
+							data-bs-slide="prev"
+						>
+							<span
+								class="carousel-control-prev-icon"
+								aria-hidden="true"
+							></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button
+							class="carousel-control-next"
+							type="button"
+							data-bs-target="#carouselExampleCaptions"
+							data-bs-slide="next"
+						>
+							<span
+								class="carousel-control-next-icon"
+								aria-hidden="true"
+							></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+					<!-- Carousel end div -->
+				</div>
+			</div>
+		</div>
+		<!-- Bootstrap js import-->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
