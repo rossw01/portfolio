@@ -23,6 +23,7 @@ body {
 }
 
 .title-text {
+	font-family: "DM Serif Display", monospace;
 	font-size: 42px;
 	color: #124559;
 }
