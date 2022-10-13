@@ -1,0 +1,14 @@
+{
+	"workbench.colorCustomizations": {
+		"editorCursor.background": "#FFFFFF",
+		"editorCursor.foreground": "#FFFFFF"
+	},
+
+	"vim.handleKeys": {
+		"<C-d>": true,
+		"<C-s>": false,
+		"<C-z>": false,
+		"<C-w>": false,
+		"<C-a>": false
+	}
+}
