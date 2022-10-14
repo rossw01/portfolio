@@ -134,6 +134,41 @@ body {
 	font-family: "DM Serif Display", monospace;
 }
 
+.btn-custom {
+	border: 4px #01161e;
+}
+
+#heroImg {
+	animation: fade-in-slide-from-right 800ms ease-out;
+}
+
+#heroContent {
+	animation: fade-in-slide-from-left 600ms ease-out 150ms;
+	/* animation duration is 300ms, 150ms is delay before animation start */
+}
+
+@keyframes fade-in-slide-from-left {
+	0% {
+		transform: translateX(-100%);
+		opacity: 0%;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 100%;
+	}
+}
+
+@keyframes fade-in-slide-from-right {
+	0% {
+		transform: translateX(+100%);
+		opacity: 0%;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 100%;
+	}
+}
+
 /* Responsive Styles */
 /* Smaller Desktop Size */
 @media screen and (max-width: 1400px) {
@@ -189,8 +224,4 @@ body {
 	.hero-subtext {
 		font-size: 14px;
 	}
-}
-
-.btn-custom {
-	border: 4px #01161e;
 }
