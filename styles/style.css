@@ -1,156 +1,196 @@
 * {
-  box-sizing: border-box;
-  font-family: "DM Sans", monospace;
+	box-sizing: border-box;
+	font-family: "DM Sans", monospace;
 }
 
 html,
 body {
-  margin: 0px;
+	margin: 0px;
 }
 
 /* Text highlight override */
 ::selection {
-  background: #aec3b0;
+	background: #aec3b0;
 }
 
 .palette-colours {
-  /* Not a real class, just a palette for speeding up workflow */
-  background: #01161e;
-  background: #124559;
-  background: #598392;
-  background: #aec3b0;
-  background: #eff6e0;
+	/* Not a real class, just a palette for speeding up workflow */
+	background: #01161e;
+	background: #124559;
+	background: #598392;
+	background: #aec3b0;
+	background: #eff6e0;
 }
 
 .wrapper {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
+	scroll-snap-type: y mandatory;
+	overflow-y: scroll;
+	height: 100vh;
 }
 
 .navbar {
-  background-color: #01161e;
+	background-color: #01161e;
 }
 
 .navbar-brand {
-  color: #598392 !important;
+	color: #598392 !important;
 }
 
 .navbar-brand:hover {
-  color: #8fb8c6 !important;
+	color: #8fb8c6 !important;
 }
 
 .btn-primary {
-  background-color: #124559 !important;
-  border-color: #aec !important;
+	background-color: #124559 !important;
+	border-color: #aec !important;
 }
 
 .btn-primary:hover {
-  background-color: #215f78 !important;
+	background-color: #215f78 !important;
 }
 
 .panel {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  scroll-snap-align: start;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	scroll-snap-align: start;
 }
 
 .inline-padding {
-  padding-inline: 250px;
+	padding-inline: 250px;
 }
 
 .one {
-  background-color: #01161e;
+	background-color: #01161e;
 }
 
 .panel-one-content {
-  display: flex;
-  height: 100%;
-  align-items: center;
+	display: flex;
+	height: 100%;
+	align-items: center;
 }
 
 .hero-content {
-  width: 55%;
+	width: 55%;
 }
 
 .hero-headline {
-  font-size: 52px;
-  color: #598392;
-  font-family: "DM Serif Display", monospace;
+	font-size: 52px;
+	color: #598392;
+	font-family: "DM Serif Display", monospace;
 }
 
 .hero-subtext {
-  font-size: 16px;
-  color: #aec3b0;
+	font-size: 16px;
+	color: #aec3b0;
 }
 
 .hero-image {
-  margin-left: auto;
-  width: 40%;
+	margin-left: auto;
+	width: 40%;
 }
 
 .hero-button {
-  background-color: #60c19e !important;
-  color: #01161e !important;
-  font-size: 56px;
-  margin-top: 1rem;
+	background-color: #60c19e !important;
+	color: #01161e !important;
+	font-size: 56px;
+	margin-top: 1rem;
 }
 
 .hero-button:hover {
-  background-color: #82dcbb !important;
+	background-color: #82dcbb !important;
 }
 
 .socials {
-  margin-top: 1.5rem;
+	margin-top: 1.5rem;
 }
 
 .social-link {
-  color: #598392;
-  padding-right: 0.5rem;
+	color: #598392;
+	padding-right: 0.5rem;
 }
 
 .social-link:hover {
-  color: #739cab;
+	color: #739cab;
 }
 
 /* Panel two */
 .two {
-  background-color: #01161e;
+	background-color: #01161e;
+}
+
+.title-margin {
+	margin-top: 3rem;
+}
+
+/* Panel three */
+.three {
+	background-color: #01161e;
+}
+
+.heading {
+	font-size: 32px;
+	color: #4c717e;
+	font-family: "DM Serif Display", monospace;
 }
 
 /* Responsive Styles */
 /* Smaller Desktop Size */
 @media screen and (max-width: 1400px) {
-  .inline-padding {
-    padding-inline: 50px;
-  }
-  .hero-content {
-    width: 50%;
-  }
+	.inline-padding {
+		padding-inline: 50px;
+	}
+	.hero-content {
+		width: 50%;
+	}
 }
 
-/* Mobile Size */
+/* Tablet */
 @media screen and (max-width: 700px) {
-  .hero-content {
-    width: 100%;
-  }
-  .hero-headline {
-    font-size: 42px;
-  }
+	.hero-content {
+		width: 100%;
+	}
+	.hero-headline {
+		font-size: 42px;
+	}
 
-  .panel-one-content {
-    flex-direction: column-reverse;
-    margin-block: auto;
-    justify-content: center;
-  }
+	.panel-one-content {
+		flex-direction: column-reverse;
+		margin-block: auto;
+		justify-content: center;
+	}
 
-  .hero-image {
-    width: 60%;
-    margin: 0 0 5vh 0;
-  }
+	.hero-image {
+		width: 60%;
+		margin: 0 0 5vh 0;
+	}
+}
+
+/* Mobile */
+@media screen and (max-width: 500px) {
+	.inline-padding {
+		padding-inline: 20px;
+	}
+
+	.hero-subtext {
+		font-size: 14px;
+	}
+
+	.title-margin {
+		margin-top: 1rem;
+	}
+}
+
+/* Tiny Mobile */
+@media screen and (max-width: 390px) {
+	.hero-headline {
+		font-size: 32px;
+	}
+	.hero-subtext {
+		font-size: 14px;
+	}
 }
 
 .btn-custom {
-  border: 4px #01161e;
+	border: 4px #01161e;
 }
