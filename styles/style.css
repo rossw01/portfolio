@@ -139,32 +139,47 @@ body {
 }
 
 #heroImg {
-	animation: fade-in-slide-from-right 800ms ease-out;
+	animation: fade-in-slide-from-right 800ms ease-in-out;
 }
 
 #heroContent {
-	animation: fade-in-slide-from-left 600ms ease-out 150ms;
+	animation: fade-in-slide-from-left 700ms ease-in-out;
 	/* animation duration is 300ms, 150ms is delay before animation start */
 }
 
-@keyframes fade-in-slide-from-left {
+#navbar {
+	animation: fade-in-slide-from-top 500ms ease-in-out;
+}
+
+@keyframes fade-in-slide-from-top {
 	0% {
-		transform: translateX(-100%);
+		transform: translateY(-100%);
 		opacity: 0%;
 	}
 	100% {
-		transform: translateX(0);
+		transform: translateY(0);
+		opacity: 100%;
+	}
+}
+@keyframes fade-in-slide-from-left {
+	0% {
+		transform: translateX(-100%) rotate(-5deg);
+		opacity: 0%;
+	}
+	100% {
+		transform: translateX(0) rotate(0deg);
 		opacity: 100%;
 	}
 }
 
 @keyframes fade-in-slide-from-right {
 	0% {
-		transform: translateX(+100%);
+		transform: translateX(+100%) rotate(5deg);
 		opacity: 0%;
+		rotate: 20px;
 	}
 	100% {
-		transform: translateX(0);
+		transform: translateX(0) rotate(0deg);
 		opacity: 100%;
 	}
 }
