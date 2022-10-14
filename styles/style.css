@@ -123,6 +123,15 @@ body {
 	margin-top: 3rem;
 }
 
+.gh-link {
+	padding: 0.5rem;
+	border-radius: 10px;
+	background-color: #2b6d87;
+	text-decoration: none;
+	color: white;
+	margin-bottom: -1rem;
+}
+
 /* Panel three */
 .three {
 	background-color: #01161e;
