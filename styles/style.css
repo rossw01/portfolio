@@ -129,7 +129,6 @@ body {
 	background-color: #2b6d87;
 	text-decoration: none;
 	color: white;
-	margin-bottom: -1rem;
 }
 
 /* Panel three */
@@ -145,6 +144,19 @@ body {
 
 .btn-custom {
 	border: 4px #01161e;
+}
+
+.scroll-to-top {
+	cursor: pointer;
+	text-align: center;
+	color: #789d88;
+	display: flex;
+	margin-inline: auto;
+	flex-direction: column;
+	margin-top: auto;
+	margin-bottom: 2rem;
+	justify-content: center;
+	text-decoration: none;
 }
 
 #heroImg {
@@ -240,12 +252,34 @@ body {
 	}
 }
 
-/* Tiny Mobile */
-@media screen and (max-width: 390px) {
+/* Medium Phone */
+@media screen and (max-width: 380px) {
 	.hero-headline {
-		font-size: 32px;
+		font-size: 28px;
+		margin-bottom: 0px;
+	}
+	.heading {
+		font-size: 16px;
+		margin-bottom: 0px;
 	}
 	.hero-subtext {
-		font-size: 14px;
+		font-size: 13px;
+	}
+}
+
+/* Tiny Mobile */
+@media screen and (max-width: 290px) {
+	.inline-padding {
+		padding-inline: 10px;
+	}
+	.hero-headline {
+		font-size: 28px;
+	}
+	.hero-subtext {
+		font-size: 12px;
+		margin-bottom: 0px;
+	}
+	.title-margin {
+		margin-top: 0px;
 	}
 }
