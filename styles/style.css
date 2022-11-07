@@ -95,10 +95,12 @@ body {
 	color: #01161e !important;
 	font-size: 56px;
 	margin-top: 1rem;
+	transition: all 0.2s ease-in-out !important;
 }
 
 .hero-button:hover {
-	background-color: #82dcbb !important;
+	background-color: #82dca9 !important;
+	transform: scale(1.1);
 }
 
 .socials {
@@ -131,6 +133,26 @@ body {
 	color: white;
 }
 
+.gh-link:hover {
+	background-color: #4b91ad;
+	color: white;
+}
+
+.technologies {
+	display: flex;
+	flex-direction: row;
+	gap: 0.3rem;
+	justify-content: center;
+	margin-bottom: -0.5rem;
+}
+
+.technologies-item {
+	border-radius: 20px;
+	color: white;
+	background-color: #2b6d87;
+	padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+}
+
 /* Panel three */
 .three {
 	background-color: #01161e;
@@ -157,6 +179,12 @@ body {
 	margin-bottom: 2rem;
 	justify-content: center;
 	text-decoration: none;
+	transition: all 0.35s ease-in-out;
+}
+
+.scroll-to-top:hover {
+	color: #95dcb4;
+	transform: scale(1.15);
 }
 
 #heroImg {
